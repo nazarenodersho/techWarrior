@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link de tech font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- link de segunda tech font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Tech Warrior</title>
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <header>
+        <div class="imgContainer">
+            <img src="./img/logo.png" alt="Logo de Tech Warrior">
+        </div>
+
+        <h1 class="titulo">Tech Warrior</h1>
+
+        <!-- Carrito -->
+        <div class="carritoLogo">
+          <img src="./img/carrito-de-compras.png" id="carritoImg" alt="Logo de carrito de compras">
+
+          <div class="ventana-carrito" id="ventanaCarrito">
+            <div class="contenidoCarrito">
+              <div class="productos-lista" id="productosLista"></div>
+            </div>
+
+            <div class="totalCarrito">
+              <p>Total: $<span id="totalPrecio">0</span></p>
+            </div>
+
+            <div class="accionesCarrito">
+              <button class="limpiar-btn" id="limpiarCarrito">Limpiar</button>
+            </div>
+
+            <button class="cerrar-btn" id="cerrarVentana">Cerrar</button>
+          </div>
+          
+        </div>
+    </header>
+
+    <!-- Menu de categorias de productos -->
+    <main>
+        <h2 class="subtitulo">Elige una categoría</h2>
+
+        <div class="grid-container">
+
+            <div class="logo logo-uno" onclick="mostrarVentana('monitores')">
+              <img src="./img/mac.png" alt="Monitor">
+              <div class="nombreCategoria">
+                <p>Monitores</p>
+              </div>
+            </div>
+            <div class="logo logo-dos" onclick="mostrarVentana('auriculares')">
+              <img src="./img/auricular.png" alt="Auricular">
+              <div class="nombreCategoria">
+                <p>Auriculares</p>
+              </div>
+            </div>
+            <div class="logo logo-tres" onclick="mostrarVentana('mouse')">
+              <img src="./img/raton.png" alt="Mouse">
+              <div class="nombreCategoria">
+                <p>Mouse</p>
+              </div>
+            </div>
+            <div class="logo logo-cuatro" onclick="mostrarVentana('teclados')">
+              <img src="./img/teclado.png" alt="Teclado">
+              <div class="nombreCategoria">
+                <p>Teclados</p>
+              </div>
+            </div>
+            <div class="logo logo-cinco" onclick="mostrarVentana('procesadores')">
+              <img src="./img/procesador.png" alt="Procesador">
+              <div class="nombreCategoria">
+                <p>Procesadores</p>
+              </div>
+            </div>
+            <div class="logo logo-seis" onclick="mostrarVentana('ssd')">
+              <img src="./img/ssd.png" alt="Tarjeta SSD">
+              <div class="nombreCategoria">
+                <p>Tarjetas SSD</p>
+              </div>
+            </div>
+
+          </div>
+    </main>
+
+    <!-- Ventanas de categorias: -->
+    <div id="monitores" class="ventana">
+      <span class="close-btn" onclick="cerrarVentana('monitores')">&times;</span>
+      <h3>Monitores</h3>
+      <div class="contenidoVentana"></div>
+    </div>
+
+    <div id="auriculares" class="ventana">
+      <span class="close-btn" onclick="cerrarVentana('auriculares')">&times;</span>
+      <h3>Auriculares</h3>
+      <div class="contenidoVentana"></div>
+    </div>
+
+    <div id="mouse" class="ventana">
+      <span class="close-btn" onclick="cerrarVentana('mouse')">&times;</span>
+      <h3>Mouse</h3>
+      <div class="contenidoVentana"></div>
+    </div>
+
+    <div id="teclados" class="ventana">
+      <span class="close-btn" onclick="cerrarVentana('teclados')">&times;</span>
+      <h3>Teclados</h3>
+      <div class="contenidoVentana"></div>
+    </div>
+
+    <div id="procesadores" class="ventana">
+      <span class="close-btn" onclick="cerrarVentana('procesadores')">&times;</span>
+      <h3>Procesadores</h3>
+      <div class="contenidoVentana"></div>
+    </div>
+
+    <div id="ssd" class="ventana">
+      <span class="close-btn" onclick="cerrarVentana('ssd')">&times;</span>
+      <h3>Tarjetas SSD</h3>
+      <div class="contenidoVentana"></div>
+    </div>
+
+    <!-- Script Javascript -->
+    <script src="./js/carrito.js"></script>
+    <script src="./js/categorias.js"></script>
+
+    <!-- Script SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body
+</html>

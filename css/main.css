@@ -1,0 +1,258 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Background */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+/* Header */
+header {
+  position: relative;
+  margin: 10px; }
+  header .imgContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px; }
+    header .imgContainer img {
+      height: 10rem;
+      width: 10rem; }
+  header .titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    top: 80%;
+    left: 5%;
+    right: 5%; }
+  header .carritoLogo {
+    cursor: pointer; }
+    header .carritoLogo img {
+      height: 2.8rem;
+      width: 2.8rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      margin: 5px; }
+    header .carritoLogo .ventana-carrito {
+      font-family: "Share Tech", sans-serif;
+      position: fixed;
+      top: 0.1%;
+      right: 0.1%;
+      background-color: white;
+      border-radius: 4px;
+      padding: 20px;
+      height: 50vh;
+      width: 40vw;
+      overflow-y: auto;
+      display: none;
+      z-index: 9999; }
+      header .carritoLogo .ventana-carrito .contenidoCarrito {
+        display: flex;
+        flex-direction: column; }
+        header .carritoLogo .ventana-carrito .contenidoCarrito .productos-lista {
+          max-height: 25vh;
+          overflow-y: auto;
+          margin-bottom: 10px; }
+        header .carritoLogo .ventana-carrito .contenidoCarrito .itemCarrito {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px; }
+      header .carritoLogo .ventana-carrito .totalCarrito {
+        border-top: #056680 2px solid; }
+      header .carritoLogo .ventana-carrito .limpiar-btn {
+        font-family: "Share Tech", sans-serif;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: #056680;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; }
+      header .carritoLogo .ventana-carrito .eliminar-producto-container {
+        display: inline-block;
+        margin-left: 8px; }
+        header .carritoLogo .ventana-carrito .eliminar-producto-container .eliminar-producto-btn {
+          border: none;
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          font-size: 16px;
+          cursor: pointer; }
+      header .carritoLogo .ventana-carrito .cerrar-btn {
+        font-family: "Share Tech", sans-serif;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: red;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; }
+
+/* Main */
+main {
+  position: relative;
+  backdrop-filter: blur(15px);
+  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  main .subtitulo {
+    font-family: "Share Tech", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: underline 2px whitesmoke;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center; }
+  main .grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px 0px;
+    justify-items: center;
+    grid-template-areas: "logo-uno logo-dos" "logo-tres logo-cuatro" "logo-cinco logo-seis"; }
+  main .logo-uno {
+    grid-area: logo-uno; }
+  main .logo-dos {
+    grid-area: logo-dos; }
+  main .logo-tres {
+    grid-area: logo-tres; }
+  main .logo-cuatro {
+    grid-area: logo-cuatro; }
+  main .logo-cinco {
+    grid-area: logo-cinco; }
+  main .logo-seis {
+    grid-area: logo-seis; }
+  main .logo img {
+    max-width: 100%;
+    height: 6rem; }
+  main .nombreCategoria {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Share Tech", sans-serif;
+    font-size: 1.2rem; }
+
+/* Ventanas de categorias: */
+.ventana {
+  font-family: "Share Tech", sans-serif;
+  text-align: center;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  z-index: 9999;
+  overflow-y: auto;
+  max-height: 80vh; }
+  .ventana h3 {
+    margin: 10px;
+    text-decoration: underline black 2px; }
+  .ventana .close-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    margin: 2px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%; }
+  .ventana .producto img {
+    max-width: 10rem;
+    height: 100%; }
+  .ventana .producto button {
+    cursor: pointer;
+    background-color: #056680;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px; }
+
+/* Media Queries: */
+@media screen and (min-width: 768px) {
+  header {
+    margin-top: 40px; }
+    header .imgContainer {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      margin: 0; }
+      header .imgContainer img {
+        height: 8rem;
+        width: 8rem; }
+    header .titulo {
+      position: absolute;
+      top: 45px; }
+    header .carritoLogo img {
+      top: 40px; }
+  main {
+    max-width: 600px;
+    margin: 0 auto; }
+  .ventana {
+    height: 70vh;
+    width: 70%;
+    max-width: 100%;
+    overflow-y: hidden; }
+    .ventana .contenidoVentana {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%; }
+      .ventana .contenidoVentana img {
+        max-width: 8rem;
+        max-height: 8rem; } }
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin-top: 20px; }
+  main {
+    max-width: 800px; }
+    main .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "logo-uno logo-dos logo-tres" "logo-cuatro logo-cinco logo-seis"; }
+    main .logo-uno {
+      grid-area: logo-uno; }
+    main .logo-dos {
+      grid-area: logo-dos; }
+    main .logo-tres {
+      grid-area: logo-tres; }
+    main .logo-cuatro {
+      grid-area: logo-cuatro; }
+    main .logo-cinco {
+      grid-area: logo-cinco; }
+    main .logo-seis {
+      grid-area: logo-seis; }
+  .ventana .contenidoVentana img {
+    max-width: 12rem;
+    max-height: 12rem; } }

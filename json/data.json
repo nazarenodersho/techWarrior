@@ -1,0 +1,127 @@
+{
+    "monitores": [
+        {
+            "nombre": "Samsung Odyssey G3",
+            "descripcion": "27 pulgadas 144Hz",
+            "precio": 165000,
+            "imagen": "./img/monitorUno.png"
+        },
+        {
+            "nombre": "Samsung Odyssey G4",
+            "descripcion": "27 pulgadas 240Hz",
+            "precio": 173000,
+            "imagen": "./img/monitorDos.png"
+        },
+        {
+            "nombre": "Asus TUF Gaming",
+            "descripcion": "24 pulgadas 165Hz",
+            "precio": 170000,
+            "imagen": "./img/monitorTres.png"
+        }
+    ],
+
+    "auriculares": [
+        {
+            "nombre": "RedDragon Lamia 2",
+            "descripcion": "Sonido de 7.1 canales",
+            "precio": 25000,
+            "imagen": "./img/auricularUno.png"
+        },
+        {
+            "nombre": "HyperX Cloud Stinger Core",
+            "descripcion": "Audio inmersivo en el juego",
+            "precio": 38000,
+            "imagen": "./img/auricularDos.png"
+        },
+        {
+            "nombre": "Logitech Zone Vibe 125",
+            "descripcion": "Auricular Inalámbrico",
+            "precio": 93000,
+            "imagen": "./img/auricularTres.png"
+        }
+    ],
+
+    "mouse": [
+        {
+            "nombre": "HyperX Pulsefire Surge",
+            "descripcion": "Iluminación RGB 360",
+            "precio": 31000,
+            "imagen": "./img/mouseUno.png"
+        },
+        {
+            "nombre": "RedDragon M908 Impact",
+            "descripcion": "18 botones programables",
+            "precio": 10000,
+            "imagen": "./img/mouseDos.png"
+        },
+        {
+            "nombre": "HyperX Pulsefire Pro",
+            "descripcion": "Cómodo diseño ergonómico",
+            "precio": 28000,
+            "imagen": "./img/mouseTres.png"
+        }
+    ],
+
+    "teclados": [
+        {
+            "nombre": "RedDragon Horus K619",
+            "descripcion": "Iluminación RGB",
+            "precio": 40000,
+            "imagen": "./img/tecladoUno.png"
+        },
+        {
+            "nombre": "HyperX Alloy Origins",
+            "descripcion": "Teclado mecánico",
+            "precio": 56000,
+            "imagen": "./img/tecladoDos.png"
+        },
+        {
+            "nombre": "Logitech SE Gaming",
+            "descripcion": "Conexión USB 2.0",
+            "precio": 45000,
+            "imagen": "./img/tecladoTres.png"
+        }
+    ],
+
+    "procesadores": [
+        {
+            "nombre": "AMD Ryzen 5 4600G",
+            "descripcion": "6 núcleos",
+            "precio": 81000,
+            "imagen": "./img/procesadorUno.png"
+        },
+        {
+            "nombre": "Intel Core i5 12400F",
+            "descripcion": "6 núcleos",
+            "precio": 142000,
+            "imagen": "./img/procesadorDos.png"
+        },
+        {
+            "nombre": "Intel Core i7 10700KF",
+            "descripcion": "8 núcleos",
+            "precio": 230000,
+            "imagen": "./img/procesadorTres.png"
+        }
+    ],
+
+    "ssd": [
+        {
+            "nombre": "Kingston Fury Renegade",
+            "descripcion": "2 Terabytes, 7300MB/S",
+            "precio": 142000,
+            "imagen": "./img/ssdUno.png"
+        },
+        {
+            "nombre": "Kingston KC3000",
+            "descripcion": "2 Terabytes, 7000 MB/S",
+            "precio": 130000,
+            "imagen": "./img/ssdDos.png"
+        },
+        {
+            "nombre": "Kingston NVME",
+            "descripcion": "2 Terabytes, 3500MB/S",
+            "precio": 95000,
+            "imagen": "./img/ssdTres.png"
+        }
+    ]
+}
