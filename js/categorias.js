@@ -20,7 +20,7 @@ async function mostrarVentana(categoria) {
               <h4>${producto.nombre}</h4>
               <p>${producto.descripcion}</p>
               <p>Precio: $${producto.precio}</p>
-              <button onclick="agregarAlCarrito('${producto.nombre}')">Agregar al carrito</button>
+              <button class="agregar-btn" onclick="agregarAlCarrito('${producto.nombre}')">Agregar al carrito</button>
           </div>
           `;
           contenidoVentana.insertAdjacentHTML("beforeend", itemProducto);

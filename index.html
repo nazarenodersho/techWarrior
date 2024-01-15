@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link de tech font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
-    <!-- link de segunda tech font -->
+    <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
@@ -22,7 +17,7 @@
 <body>
     <div class="background-image"></div>
 
-    <header>
+    <header class="header">
         <div class="imgContainer">
             <img src="./img/logo.png" alt="Logo de Tech Warrior">
         </div>
@@ -53,7 +48,7 @@
     </header>
 
     <!-- Menu de categorias de productos -->
-    <main>
+    <main class="main">
         <h2 class="subtitulo">Elige una categoría</h2>
 
         <div class="grid-container">
@@ -101,37 +96,37 @@
     <!-- Ventanas de categorias: -->
     <div id="monitores" class="ventana">
       <span class="close-btn" onclick="cerrarVentana('monitores')">&times;</span>
-      <h3>Monitores</h3>
+      <h3 class="nombre-categoria">Monitores</h3>
       <div class="contenidoVentana"></div>
     </div>
 
     <div id="auriculares" class="ventana">
       <span class="close-btn" onclick="cerrarVentana('auriculares')">&times;</span>
-      <h3>Auriculares</h3>
+      <h3 class="nombre-categoria">Auriculares</h3>
       <div class="contenidoVentana"></div>
     </div>
 
     <div id="mouse" class="ventana">
       <span class="close-btn" onclick="cerrarVentana('mouse')">&times;</span>
-      <h3>Mouse</h3>
+      <h3 class="nombre-categoria">Mouse</h3>
       <div class="contenidoVentana"></div>
     </div>
 
     <div id="teclados" class="ventana">
       <span class="close-btn" onclick="cerrarVentana('teclados')">&times;</span>
-      <h3>Teclados</h3>
+      <h3 class="nombre-categoria">Teclados</h3>
       <div class="contenidoVentana"></div>
     </div>
 
     <div id="procesadores" class="ventana">
       <span class="close-btn" onclick="cerrarVentana('procesadores')">&times;</span>
-      <h3>Procesadores</h3>
+      <h3 class="nombre-categoria">Procesadores</h3>
       <div class="contenidoVentana"></div>
     </div>
 
     <div id="ssd" class="ventana">
       <span class="close-btn" onclick="cerrarVentana('ssd')">&times;</span>
-      <h3>Tarjetas SSD</h3>
+      <h3 class="nombre-categoria">Tarjetas SSD</h3>
       <div class="contenidoVentana"></div>
     </div>
 
